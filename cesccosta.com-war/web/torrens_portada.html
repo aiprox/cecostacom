@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Theme Template for Bootstrap</title>
+
+ <!-- Bootstrap core CSS 
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="css/a-style.css" rel="stylesheet">
+    <link href="css/a-theme.css" rel="stylesheet">
+
+    <!-- Custom styles for this template 
+    <link href="css/navbar-fixed-top.css" rel="stylesheet">-->
+
+    <!-- Owl Carousel Assets -->
+    <link href="awlcarrousel/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="awlcarrousel/owl-carousel/owl.theme.css" rel="stylesheet">
+    <link href="awlcarrousel/owl-carousel/owl.transitions.css" rel="stylesheet">
+
+    <link href="awlcarrousel/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+  
+    <!-- Le fav and touch icons Owl Carousel-->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="awlcarrousel/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="awlcarrousel/assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="awlcarrousel/assets/ico/apple-touch-icon-72-precomposed.png">
+       <link rel="apple-touch-icon-precomposed" href="awlcarrousel/assets/ico/apple-touch-icon-57-precomposed.png">
+      <link rel="shortcut icon" href="awlcarrousel/assets/ico/favicon.png">
+
+<!--wow-->
+
+<link rel="stylesheet" href="wow/css/libs/animate.css">
+  
+  <!--<link rel="stylesheet" href="wow/css/site.css">
+
+
+<link rel="stylesheet" href="css/contact-form.css">
+-->
+
+<!--ICON FONTS-->
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
+
+ <style>
+/*====CONVENCIONAL DE WOW PER AL PRIMER ELEMENT======*/
+    .wow:first-child {
+      visibility: hidden;
+    }
+</style>
+
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <style>
+/* ====CARROUSEL DE OWL==== */
+
+
+
+
+    #owl-demo .item img{
+        display: block;
+        width: 100%;
+		min-height: 550px;
+		min-width: 1000px;
+        height: auto;
+    }
+	
+	/*no visualitar els controls de paginació*/
+/*	
+	.owl-theme .owl-controls .owl-buttons div{
+	display: none;
+	*display: none;
+	
+}
+
+
+
+.owl-theme .owl-controls .owl-page{
+	display: none;
+	*display: none;
+}
+.owl-theme .owl-controls .owl-page span{
+	display: none;
+}
+*/
+
+#owl-cataleg .item{
+  background: #333;
+  padding: 20px 0px;
+  margin: 2px;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+}
+.customNavigation{
+  text-align: center;
+}
+//use styles below to disable ugly selection
+.customNavigation a{
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+</style>
+
+<style>
+/* ====CARROUSEL DE BOOTSTRAP==== */
+.carousel {
+  height: 800px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 800px;
+ background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 1920px;
+  height: 810px;
+}
+</style>
+ 
+ <!--===ESTILS BOTO BACK TO TOP=======-->
+ <style>
+
+#back-top {
+	z-index: 1000;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+}
+#back-top a {
+	float:right;
+	width: 45px;
+	display: block;
+	text-align: center;
+	font: 11px/100% Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #bbb;
+	/* background color transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+	margin-right: 5px;
+}
+#back-top a:hover {
+	
+	color: #000;
+}
+/* arrow icon (span tag) */
+#back-top span {
+	
+	width: 45px;
+	height: 50px;
+	display: block;
+	margin-bottom: 7px;
+	background: #333 url(img/up-arrow.png) no-repeat center center;
+	/* rounded corners */
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	/* background color transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover span {
+	background-color: #777;
+}
+</style>
+
+<!--ESTILS DEL LRS FLOTANT -->
+
+<style> 
+
+.div-a-div {
+	z-index: 999;
+	position: fixed;
+	top: 207px;
+	right: 0px;
+	/*width: 100%;*/
+}
+
+.div-a-div-bot {
+	z-index: 999;
+	position: fixed;
+	bottom: -30px;
+	width: 100%;
+}
+
+
+.div-a-ini {
+	background-image:url(img/LRS-a.png);
+	background-repeat:no-repeat;
+	background-position: top left;
+	float:right;
+	width: 650px;
+	height: 300px;
+	
+	margin-right: -10px;
+	padding-left: 80px;
+	padding-top: 10px;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+
+}
+
+.div-a {
+	background-image:url(img/LRS-a.png);
+	background-repeat:no-repeat;
+	background-position: top left;
+	float:right;
+	width: 650px;
+	height: 300px;
+
+	margin-right: -570px;
+	padding-left: 80px;
+	padding-top: 10px;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+
+}
+
+.div-a:hover {
+    margin-right: -10px;
+
+}
+
+
+.div-a-bot {
+	
+	background-image:url(img/LRS-a.png);
+	background-repeat:no-repeat;
+	background-position: top center;
+	width: 100%;
+	min-width: 300px;
+	height: 80px;
+	margin: auto;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-top: 50px;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+	
+
+
+}
+
+.div-a-bot:hover {
+    margin-bottom: 150px;
+
+}
+
+.navbar {
+	background-image:url(img/fons-trama-black-deg2.png);	
+	
+}
+.acceso_usuarios a{
+	background-image:url(img/form6.png);
+	background-repeat:no-repeat;
+}
+.acceso_usuarios a:hover{
+	background-image:url(img/form5.png);
+	background-repeat:no-repeat;
+}
+.destacat > a {
+	background-color:#D32626;
+}
+.destacat > a:hover {
+	background-color:#000000;
+}
+
+.page-header {
+	border-bottom: solid #ccc;
+}
+
+.dropdown-menu {
+font-size: 14px;	
+}
+
+  <style>
+  .input-group {
+	  margin-top: 20px;
+  }
+  #formfooter input {
+	border: 0px;
+	border-bottom: solid #CCC 2px;
+	background-color: transparent;
+	color: white;
+	
+  }
+   #formfooter div {
+	   
+	margin-top: 20px;   
+   }
+
+
+
+  </style> 
+  
+  <style>
+.portadatxt {
+	background-color:rgba(255,255,255,0.7); 
+	color: #666; 
+	letter-spacing:5px; 
+	line-height:2; 
+	text-shadow:1px 2px 3px rgba(255,255,255,1); 						    text-transform:none;
+	font-size:36px;
+	
+}
+.groc{
+	color:#F00;
+}
+
+	
+
+
+</style>
+    
+  </head>
+
+  <body role="document" style="background-image:url(img/bg_pattern.png); background-repeat:repeat">
+
+
+    <!-- Fixed navbar -->
+    <nav id="menupral" class="navbar navbar-default navbar-fixed-top fadeInUp animated" style="animation-delay: 0.5s; -webkit-animation-delay: 0.5s;">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+          
+            
+       <a class="navbar-toggle collapsed" href="#" data-toggle="modal" data-target="#myModal" style="padding: 5px">
+       <span class="glyphicon glyphicon-log-in" style="font-size: 20px; color:#CCC; padding: 0px"></span>
+       </a>
+      
+       
+
+              <a id="logomini2" class="navbar-brand" href="#" style="padding: 18px 15px 0px 8px; margin: auto; vertical-align: central; display: block"><img src="img/logos/logo-menu.png" style="margin-top: -6px; padding: 0px"></a> 
+              </div>
+       
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown"> <a href="xt50.html" ></span>CONCEPTO</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">FINCA <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="caracteristicas.html#gerencia">GERENCIA</a></li>
+                <li><a href="caracteristicas.html#administracion">GESTIÓN ADMINISTRATIVA</a></li>
+                <li><a href="caracteristicas.html#pericia">GESTIÓN PERICIAL</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">PRODUCTO<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="ventajas.html#tecnicas">Ventajas técnicas</a></li>
+                <li><a href="ventajas.html#funcionales">Ventajas funcionales</a></li>
+                <li><a href="ventajas.html#corporativas">Ventajas corporativas</a></li>
+              </ul>
+            </li>
+            <li><a href="casos-de-exito.html">VISITAS</a></li>
+            <li><a href="casos-de-exito.html">CONTACTAR</a></li>
+            
+            
+            </ul>
+          
+          
+          <ul class="nav navbar-nav navbar-right">
+        <li>
+        <!--<a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
+      </ul>
+      </div>
+      </div>
+    </nav>
+
+<!--NAVEGADOR \\-->
+
+
+<!--BANNER LOGOS
+
+<div id="logo" style="width: 100%; position: absolute; z-index: 500; display: none">
+<center>
+<div class="container">
+<a href="#" style="float:left" class="wow slideInLeft"><img src="img/logo-banner.png"></a>
+<div class="acceso_usuarios"><a href="#" style="float:right" class="wow slideInRight"><img src="img/form.png"></a></div>
+</div>
+</center>
+</div>
+
+BANNER LOGOS // -->
+
+<!--BANNER -->
+<div class="row" style="background-image:url(img/portades/vinya_1.jpg); background-repeat:no-repeat; background-position:center; background-repeat:repeat-x">
+<div class="container" style="height: 100%" >
+<div style="margin-top: 60px; height: 100%">
+
+<div class="wow slideInRight" data-wow-delay="2s" style="background-image:url(); background-repeat:no-repeat; height: 100%; width:100%; background-position:right bottom;">
+           <div style="margin-left: 0px; margin-top: 0px; text-align:left; color: #37001C;  height: 100%;">
+<div id="textportadaxx" style="width: 310px; height: 450px;  background-image:url(img/fons-trama-suau.png); padding: 15px; padding-top: 35px; border-right: solid #CCC 1px; border-left: solid 1px #F0E4B3; margin-left: 5px">
+
+
+<h2 style="color:#510028">Vinos & Cavas</h2>
+<hr><center>
+<h4>De cuidada elaboración<br>en nuestra finca<br>de la Fortesa 
+</h4>
+
+<img class="img-circle img-responsive" style="min-height: 0; min-width: 0; margin-top: 25px" src="img/portades/text-portada.png">
+</center>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!--- LRS --->
+<style>
+.textlrs .h1, .h2, .h3, h1, h2, h3 {
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+.textlrs .h1, .h2, .h3, h1, h2, h3 {
+	text-shadow: 1px 1px 1px #FFFFFF;
+}
+.textlrs hr {
+  border: inset white 1px;
+}
+
+.textlrs img {
+	height: 200px;	
+}
+.textlrs {
+/*height: 520px;*/
+/*background-image: url(img/fons-trama-black.png);*/
+padding: 15px;
+padding-top: 25px;
+/*border-right: inset #CCC 2px; 
+border-bottom: inset #CCC 2px; 
+border-left: solid 1px #F0E4B3;*/
+}
+
+p {
+*text-align: justify;*
+}
+
+
+
+</style>
+
+<div class="row" style="background-image:url(img/linia_inv.png); background-repeat:repeat-x; margin-top: 0px; background-position:  -20px center top">
+<div class="container" style="height: 100%" >
+<div style="margin-top: 0px; height: 100%">
+
+<div class="wow slideInDown" data-wow-delay="1s" style="background-image:url(); background-repeat:no-repeat; height: 100%; width:100%; background-position:right bottom;">
+           <div style="margin-left: 0px; margin-top: 0px; text-align:left; color: #37001C;  height: 100%;">
+           
+
+
+<div id="textportadaxx" class="textlrs col-md-3 col-sm-6 col-xs-12 wow slideInDown" data-wow-delay="0s">
+
+<center>
+<h3 style="color:#510028; font-stretch:condensed">Nuestros<br>
+  Cavas</h3>
+<hr>
+<img class="img-responsive" style="min-height: 0; min-width: 0;" src="img/portada_h2.png">
+  <h5>Elaboración tradicional con<br>una personalidad<br>muy especial 
+</h5>
+</center>
+</div>
+
+<div id="textportadaxx" class="textlrs col-md-3 col-sm-6 col-xs-12 wow slideInDown" data-wow-delay="1s">
+<center>
+<h3 style="color:#510028; font-stretch:condensed">Nuestros<br>
+  Vinos</h3>
+<hr>
+  <img class="img-responsive" style=" min-height: 0; min-width: 0;" src="img/portada_h_vi.png">
+<h5>Extensa gama de coupages <br>
+  varietales, rosados <br>
+   negros y blancos</h5>
+</center>
+</div>
+
+<div id="textportadaxx" class="textlrs col-md-3 col-sm-6 col-xs-12 wow slideInDown" data-wow-delay="1.5s">
+
+<center>
+<h3 style="color:#510028;  font-stretch:condensed">Visita Nuestro<br>Viñedo</h3>
+
+<hr>
+
+<img class="img-responsive" style="min-height: 0; min-width: 0;" src="img/portada_h_vinya.png">
+<h5>Una experiencia entre viñedos, degustación de producto y visita a nuestra cava. 
+</h5>
+</center>
+</div>
+
+<div id="textportadaxx" class="textlrs col-md-3 col-sm-6 col-xs-12 wow slideInDown" data-wow-delay="2s">
+
+<center>
+<h3 style="color:#510028;  font-stretch:condensed;">Cajas <br>
+  Degustación</h3>
+<hr>
+
+<img class="img-responsive" style=" min-height: 0; min-width: 0;" src="img/portada_h_degusta.png">
+<h5>Prueba todos nuestros Vinos y Cavas con esta selección en una sola caja 
+</h5>
+</center>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--/LRS-->
+
+<!-- SEPARADOR -->
+<div class="row" style="background-image:url(img/linia.png); background-repeat:repeat-x; background-position: 0px 120px">
+<div class="container" style="height: 100%" >
+<div style="margin-top: 30px; height: 100%">
+<center>
+<img src="img/deco/vinya_torrens__016_retallat2.png"  alt="" width="200" height="152" style="text-shadow: 2px 2px 1px #666"/>
+</center>
+</div>
+</div>
+</div>
+<!--/SEPARADOR-->
+
+<!--CONTENT-->
+<div class="row" style="background-image: url(img/deco/fris.png); background-repeat:repeat-x; background-position: bottom center">
+
+<div id="textportadaxx" class="container wow slideInDown" style="; padding: 15px; margin-top: 30px">
+
+<center>
+<h1 style="color:#510028">Concepto</h1>
+<hr>
+<h3 style="font-stretch:condensed; padding: 10px">Calidad, tradición y una filosofía en el cuidado del producto y de la tierra son nuestros aliados para obtener vinos y cavas de especial elaboración.<br></h3>
+<p>&nbsp;</p>
+</center>
+</div>
+
+
+<div class="container" style="background-image:url(img/fons-trama-suau.png); margin-top: 30px" >
+<div style="height: 100%">
+
+<!--
+<div id="textportadaxx" class="col-md-12 col-sm-12 col-xs-12 wow slideInDown" style="; padding: 15px;">
+
+<center>
+<h1 style="color:#510028">Concepto</h1>
+<hr>
+<h3 style="font-stretch:condensed">Calidad, tradición y una filosofía en el cuidado del producto y de la tierra son nuestros aliados para obtener vinos y cavas de especial elaboración.</h3>
+<p>&nbsp;</p>
+</center>
+</div>
+-->
+
+
+<div id="textportadaxx" class="col-md-6 col-sm-12 col-xs-12 wow slideInDown" style="; padding: 15px;">
+
+
+<center>
+<img src="img/deco/20061016_090_22.png" alt="" class="img-responsive"/>
+</center>
+<h1 style="color:#510028; font-stretch:condensed"">Tradición</h1>
+<hr>
+<p>Tras largos años de tradición en el cultivo de la viña y elaboración de vinos en La Fortesa (población del Penedès), la familia Torrens Moliner decide crear una nueva Bodega en Sant Sadurní d'Anoia. Fue en el año 1986 y allí nació la marca TORRENS MOLINER.<br>
+    <br>
+A lo largo de todos estos años, TORRENS MOLINER ha seguido fiel a su filosofia, combinando la mejor calidad en la producción artesanal, la tecnología más avanzada y el saber hacer de su gente.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><br>
+</p>
+</div>
+
+
+<div id="textportadaxx" class="col-md-6 col-sm-12 col-xs-12 wow slideInDown" style=" padding: 15px;">
+
+
+<center>
+<img src="img/deco/2-0494_OK_baixa_22.png" alt="" class="img-responsive"/>
+</center>
+<h1 style="color:#510028; font-stretch:condensed">Filosofía</h1>
+<hr>			 
+<p>Nuestra misión es la elaboración de Vinos y Cavas de primera calidad, posicionando los mismos en el segmento medio-alto de mercado, creando y potenciando una imagen de marca sólida, independiente e identificada con el trabajo bien hecho.<br>
+					  <br>
+				    Apostamos por la auto financiación de los proyectos acometidos, manteninedo el negocio como una empresa familiar independiente, dinámica y en constante evolución.</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+					
+		
+</div>
+
+
+</div>
+</div>
+</div>
+<!-- /CONTENT -->
+
+
+<!-- SEPARADOR -->
+<div class="row" style="background-image:url(img/linia.png); background-repeat:repeat-x; background-position: 0px 120px; margin-top: 30px">
+<div class="container" style="height: 100%" >
+<div style="margin-top: 30px; height: 100%">
+<center>
+<img src="img/deco/vinya_torrens__016_retallat3.png"  alt="" width="200" height="152" style="text-shadow: 2px 2px 1px #666"/>
+</center>
+</div>
+</div>
+</div>
+<!--/SEPARADOR-->
+
+
+
+<!--CONTENT-->
+<div class="row" style="background-image: url(img/portades/vinya_torrens__022_23.png); background-repeat:repeat-x; background-position: bottom center;">
+
+<div id="textportadaxx" class="container wow slideInDown" style="margin-top: 30px; padding: 15px; background-image: url(img/portada_boto.png); background-position:bottom; background-size: cover; background-repeat:no-repeat;  min-height: 460px">
+
+<center>
+<h1 style="color:#510028">Nuestra Finca</h1>
+<hr>
+<h3 style="font-stretch:condensed; padding: 10px">Calidad, tradición y una filosofía en el cuidado del producto y de la tierra son nuestros aliados para obtener vinos y cavas de especial elaboración.</h3>
+
+
+
+</center>
+</div>
+
+
+<div class="container" style="background-image:url(img/fons-trama-suau.png); margin-top: 30px" >
+<div style="height: 100%">
+
+
+
+<hr>
+
+<div id="textportadaxx" class="col-md-6 col-sm-12 col-xs-12 wow slideInDown" style="; padding: 15px;">
+
+
+<h1 style="color:#510028;font-stretch:condensed">Viñedos</h1>
+<hr>
+<p>En la Fortesa, pequeña población cercana a Sant Sadurní d'Anoia, se encuentran nuestros viñedos, siendo &quot;Les Planes de la Riba&quot; el principal valor, exponente y estandarte de nuestros vinos y cavas.<br>
+  <br>
+  <br>
+  <img class="img-responsive"  src="img/deco/quadres_4.png"></p>
+<p><br>
+  El clima mediterráneo cálido, suave y soleado favorece la buena maduración de nuestras preciadas uvas:</p>
+<ul>
+  <li>Macabeo, produce vinos de aromas primarios, frutales y ácidos, siendo su piel fina y de racimos compactos.</li>
+  <li>Xarel·lo, resistente, de graduación elevada, aporta estructura y acidez.</li>
+  <li>Parellada, produce vinos blancos secos, frescos aromáticos, de graduación moderada y acidez afrutada.</li>
+</ul>
+<p>El carácter del vino es fruto de la tierra y el clima, la calidad, la garantiza el hombre.<br>
+</p>
+<center>
+  <img class="img-responsive"  src="img/deco/quadres_2.png">
+</center>
+</div>
+
+<div id="textportadaxx" class="col-md-6 col-sm-12 col-xs-12 wow slideInDown" style=" padding: 15px;">
+
+
+<h1 style="color:#510028; font-stretch:condensed">Bodega</h1>
+<hr>				  
+					<p>Torrens Moliner, fiel a su espiritu de superación y mejora, ha decidido levantar una nueva bodega en la finca de Les Planes de la Riba, apostando por el control integral del proceso de elaboración, volviendo a sus raices originales.<br>
+					  <br>
+					  <img class="img-responsive"  src="img/deco/quadres_1.png"><br>
+                        El compromiso con la investigación, constante innovación y sobre todo, trabajo bien hecho, sustentan un proyecto que persigue los mismos valores de nuestros Vinos y Cavas: Calidad, Equilibrio y Personalidad.<br>
+					</p>
+
+<center>
+  <p><img class="img-responsive"  src="img/deco/quadres_3.png"></p>
+  <p>&nbsp;</p>
+</center>
+</div>
+
+</div>
+</div>
+</div>
+<!-- /CONTENT -->
+
+
+<h1 style="text-shadow:2px 2px 2px #fff"> Concepto</h1>
+						
+                        
+						  <p>&nbsp;</p>
+						  <p>&nbsp;</p>
+							
+                            <h2 class="wow fadeInDown" style="margin-top: 80px; margin-bottom: 200px"><img src="img/20061016_088_ROUND_500.png"  alt="" width="201" height="200"/><br>
+			      TRADICIÓN</h2>
+			    
+  <p class="txt3">Tras largos años de tradición en el cultivo de la viña y elaboración de vinos en La Fortesa (población del Penedès), la familia Torrens Moliner decide crear una nueva Bodega en Sant Sadurní d'Anoia. Fue en el año 1986 y allí nació la marca TORRENS MOLINER.<br>
+					  <br>
+				  A lo largo de todos estos años, TORRENS MOLINER ha seguido fiel a su filosofia, combinando la mejor calidad en la producción artesanal, la tecnología más avanzada y el saber hacer de su gente.</p>
+                  
+                  
+                  <h2><img src="img/parxes/parxes_300_vi.png"  alt=""/><br>
+  Filosofía</h2>
+				  <div class="hline"></div>
+					<p class="txt3">Nuestra misión es la elaboración de Vinos y Cavas de primera calidad, posicionando los mismos en el segmento medio-alto de mercado, creando y potenciando una imagen de marca sólida, independiente e identificada con el trabajo bien hecho.<br>
+					  <br>
+				    Apostamos por la auto financiación de los proyectos acometidos, manteninedo el negocio como una empresa familiar independiente, dinámica y en constante evolución.</p>
+                            
+				      
+</center>
+
+
+<div class="wow slideInRight" data-wow-delay="2s" style="background-image:url(); background-repeat:no-repeat; height: 100%; width:100%; background-position:right bottom;">
+           <div style="margin-right:: 0px; margin-top: 0px; text-align:left; color: #37001C;  height: 100%;">
+<div id="textportadaxx" style="float:right; width: 340px; height: 520px;  background-image:url(img/fons-trama-suau.png); padding: 15px; border-right: solid #CCC 1px; border-left: solid 1px #F0E4B3; margin-left: 5px">
+
+
+<h1 style="color:#510028">Vinos & Cavas</h1>
+<hr><center>
+<h4>De cuidada elaboración<br>en nuestra finca<br>de la Fortesa 
+</h4><br>
+
+<img class="img-circle" style="width: 240px; min-height: 0; min-width: 0;" src="img/portades/text-portada.png">
+</center>
+
+<hr></div>
+</div>
+</div>
+
+
+
+<!--DEMO WOW-->
+<div class="container theme-showcase" role="main">
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron wow slideInRight" data-wow-delay="1s" style="background-color:transparent; align-content:center">
+        <div class="wow slideInLeft page-header" data-wow-delay="1s" align="center"><br>
+        <h1> Ventajas técnicas</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <p align="center"><img src="img/ventaja1.jpg"  alt="" class="img-responsive"/></p>
+          <p style="font: 18px/26px 'Lato', Arial, sans-serif; color: #9CCE77rgba(235,42,45,1.00)" align="center">NO PRECISA ACTUALIZACIONES</p>
+                    <p style="font: 16px/24px 'Lato', Arial, sans-serif" align="justify">XT50 es un software vivo, está en continua evolución y adecuación a los nuevos sistemas de software libre por lo que...¡¡Olvídese de pagar continuas actualizaciones!!
+                    </p>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <p align="center"><img src="img/ventaja2.jpg"  alt="" class="img-responsive"/></p>
+          <p style="font: 18px/26px 'Lato', Arial, sans-serif; color:rgba(235,42,45,1.00)" align="center">DESLOCALIZACIÓN</p>
+                    <p style="font: 16px/24px 'Lato', Arial, sans-serif" align="justify">Gestione en el momento las intervenciones con sus colaboradores desde cualquier punto geográfico.</P>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <p align="center"><img src="img/ventaja3.jpg"  alt="" class="img-responsive"/></p>
+          <p style="font: 18px/26px 'Lato', Arial, sans-serif; color:rgba(235,42,45,1.00)" align="center">SISTEMA ANDROID</p>
+                    <p style="font: 16px/24px 'Lato', Arial, sans-serif" align="justify">Ejecute XTablet en una amplia gama de tablets presentes en el mercado, y no se preocupe si desea cambiar de modelo, el XTablet es fácilmente instalable en cualquier tableta con Android.</p>
+        </div>
+        </div>
+       
+      </div></div>
+      
+ 
+  <div class="row" style="background-image:url(img/fons3_2.jpg); border-bottom:#f63243 solid; border-top:#f63243 solid">
+      <div class="container theme-showcase" role="main">
+    <div class="jumbotron wow slideInRight" data-wow-delay="1s" style="background-color:transparent; align-content:center">
+        <div class="wow slideInLeft page-header" data-wow-delay="1s" align="center">
+        <h1 style="color:rgba(255,255,255,1.00)">Ventajas funcionales</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <p align="center"><img src="img/ventaja4.jpg"  alt="" class="img-responsive"/></p>
+          <p style="font: 18px/26px 'Lato', Arial, sans-serif; color:rgba(235,42,45,1.00)" align="center">FIABILIDAD</p>
+                    <p style="font: 16px/24px 'Lato', Arial, sans-serif; color:rgba(255,255,255,1.00)" align="justify">Mejore la fiabilidad de los datos al reducir enormemente los posibles errores de gestión.
+          </p>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <p align="center"><img src="img/ventaja5.jpg"  alt="" class="img-responsive"/></p>
+          <p style="font: 18px/26px 'Lato', Arial, sans-serif; color:rgba(235,42,45,1.00)" align="center">SUPRESIÓN DEL PAPEL</p>
+                    <p style="font: 16px/24px 'Lato', Arial, sans-serif;color:rgba(255,255,255,1.00)" align="justify">Olvídese de cargar con gruesas carpetas y del gasto en enormes cantidades de papel, con XT50 podrá realizar.</P>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <p align="center"><img src="img/ventaja6.jpg"  alt="" class="img-responsive"/></p>
+          <p style="font: 18px/26px 'Lato', Arial, sans-serif; color:rgba(235,42,45,1.00)" align="center">OFF LINE</p>
+                    <p style="font: 16px/24px 'Lato', Arial, sans-serif; color:rgba(255,255,255,1.00)" align="justify">Trabaje en situaciones sin cobertura y no pierda los datos, gracias a la app XTablet. XT50 funciona con y sin conexión a Internet.</p>
+        </div>
+        </div>
+       
+      </div></div></div>
+      
+      
+<div class="container theme-showcase" role="main">
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron wow slideInRight" data-wow-delay="1s" style="background-color:transparent; align-content:center">
+        <div class="wow slideInLeft page-header" data-wow-delay="1s" align="center">
+        <h1>Ventajas corporativas</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <p align="center"><img src="img/ventaja7.jpg"  alt="" class="img-responsive"/></p>
+          <p style="font: 18px/26px 'Lato', Arial, sans-serif; color:rgba(235,42,45,1.00)" align="center">ESTADÍSTICAS</p>
+                    <p style="font: 16px/24px 'Lato', Arial, sans-serif" align="justify">Obtenga estadísticas fiables y abiertas para el control y evaluación de su trabajo pericial y de su rentabilidad.
+                    </p>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <p align="center"><img src="img/ventaja8.jpg"  alt="" class="img-responsive"/></p>
+          <p style="font: 18px/26px 'Lato', Arial, sans-serif; color:rgba(235,42,45,1.00)" align="center">PLUS SERVICIO</p>
+                    <p style="font: 16px/24px 'Lato', Arial, sans-serif" align="justify">Añada un plus al servicio prestado a sus clientes gracias al aumento del control de la gestión de los expedientes periciales.</P>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <p align="center"><img src="img/ventaja9.jpg"  alt="" class="img-responsive"/></p>
+          <p style="font: 18px/26px 'Lato', Arial, sans-serif; color:rgba(235,42,45,1.00)" align="center">S.A.U.</p>
+                    <p style="font: 16px/24px 'Lato', Arial, sans-serif" align="justify">Con el Servicio de Atención al Usuario de APCASDATA podrá resolver sus dudas e incidencias.</p>
+        </div>
+        </div>
+       
+      </div></div> 
+  
+  
+        
+
+<!-- aki el tall 
+      
+      
+</div>  
+-->
+
+<!--//DEMO WOW-->
+
+
+
+
+<!--//MODAL------><!-- /container -->
+  
+  <!--=====FORM======-->
+  <div class="row" style="background-image:url(img/fons_contactar.jpg); background-repeat:repeat-x; z-index:1050">
+  <div class="container" role="form" style="padding-top:170px">
+  <div class="wow slideInLeft page-header" data-wow-delay="1s" align="center">
+  <img src="img/icone_contactar.png" width="143" height="143" alt=""/>
+<h1 style="color:rgba(255,255,255,1.00)">¿Quieres probarlo?<br>
+						Solicita una demo</h1>
+    </div>
+ <form id="formfooter" class="form-horizontal" method="post" accept-charset="iso-8859-5" action="">
+  <!--
+  
+  <span class="form-group">
+
+	<input class="form-control" name="nom" type="text" required id="nom" placeholder="Persona de contacto" title="Nombre" autocomplete="on" >
+    <input class="form-control" name="empresa" type="text" required id="empresa" placeholder="Nombre de la empresa" title="Empresa" autocomplete="on" >
+    <input class="form-control" name="email" type="email" required id="email" placeholder="Escriba su e-mail" title="e-mail" autocomplete="on">
+    <input class="form-control" name="tel" type="tel" required id="tel" placeholder="Escríba su teléfono" pattern="000000000" title="Teléfono" autocomplete="on">
+    
+    
+
+  </span>
+  -->
+
+  
+  <div class="input-group col-lg-12">
+  <span class="input-group-addon glyphicon glyphicon-user"></span>
+        
+          
+          <input class="form-control input-lg" name="nom" type="text" required id="nom" placeholder="Persona de contacto" title="Nombre" autocomplete="on">
+          </div>
+          <div class="input-group col-lg-12">
+                <span class="input-group-addon glyphicon glyphicon-home"></span>
+        <input class="form-control input-lg" name="empresa" type="text" required id="empresa" placeholder="Escriba su Empresa" title="Empresa" autocomplete="on">
+      </div>
+      <div class="input-group col-lg-12">
+        <span class="input-group-addon glyphicon glyphicon-envelope"></span>
+        <input class="form-control input-lg" name="email" type="email" required id="email" placeholder="Escriba su e-mail" title="e-mail" autocomplete="on">
+
+                <span class="input-group-addon glyphicon glyphicon-phone"></span>
+<input class="form-control input-lg" name="tel" type="tel" required id="tel" placeholder="Escríba su teléfono"  title="Teléfono" autocomplete="on">
+        </div>
+<center>
+<div class="input-group col-lg-12"><br>
+<input type="submit" class="btn-lg btn-primary">
+</div>
+</center>
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;* Datos obligatorios
+      
+  </form>
+ <p>.</p>
+  </div></div>
+  
+  <!--=====//FORM======-->
+  
+  <!-- Peu de pàgina-->
+  <div class="container theme-showcase" role="main">
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron wow slideInRight" data-wow-delay="1s" style="background-color:transparent; align-content:center">
+        <div class="wow slideInLeft page-header" data-wow-delay="1s" align="center">
+        <img src="img/logo_apcas_data_.png"><br>&copy; APCAS DATA - XT50<br>
+                  Telf. 902 104 430 · <a href="mailto:comercial@apcasdata.es">comercial@apcasdata.es</a><br> <br></div>
+      <div class="wow slideInLeft page-header" data-wow-delay="1s" align="center">
+        
+          <a href="../xt50.html">XT50</a> | <a href="../caracteristicas.html">Características</a> | <a href="../ventajas.html">Ventajas</a> | <a href="../demo.html">Demo</a> | <a href="../casos-de-exito.html">Casos de éxito</a> | <a href="../contacta.html">Contacta</a> | <a href="../requisitos.html">Requisitos</a> | <a href="../faqs.html">Preguntas Frecuentes FAQs</a> | <a href="../quienes-somos.html">APCASDATA</a> | <a href="http://www.apcas.es" target="_blank">APCAS</a>|<br>
+			        <a href="../politica-privacidad.html">Política de privacidad</a> | <a href="../aviso-legal.html">Aviso Legal</a> | <a href="../condiciones-de-uso.html">Condiciones de uso</a>
+          
+        </div>
+        
+       
+      </div></div> 
+      
+      <!--//Peu de pàgina-->
+  
+  <!---boto back to top------>
+   <div id="back-top" >
+		<a href="#top" id="back-top-link"><span></span></a>
+	</div>
+    
+           <!--- LRS ------>
+
+<div id="div-lrs" class="div-a-div" >
+
+
+	<div id="div-lrs-a" class="div-a wow slideInDown" data-wow-delay="2s">
+
+          <div id="div-lrs-child" class="list-group">
+          
+            <div id="owl-cataleg" class="owl-carousel owl-theme">
+<div class="item">
+<img src="img/producte/cava_torrens_3_carr.png">
+</div>
+<div class="item">
+<img src="img/producte/cava_torrens_3_carr.png">
+</div>
+<div class="item">
+<img src="img/producte/cava_torrens_3_carr.png">
+</div>
+<div class="item">
+<img src="img/producte/cava_torrens_3_carr.png">
+</div>
+<div class="item">
+<img src="img/producte/cava_torrens_3_carr.png">
+</div>
+<div class="item">
+<img src="img/producte/cava_torrens_3_carr.png">
+</div>
+<div class="item">
+<img src="img/producte/cava_torrens_3_carr.png">
+</div>
+<div class="item">
+<img src="img/producte/cava_torrens_3_carr.png">
+</div>
+</div>
+<div class="customNavigation">
+  <a class="btn prev">Previous</a>
+  <a class="btn next">Next</a>
+  <a class="btn play">Autoplay</a>
+  <a class="btn stop">Stop</a>
+</div>          
+          </div>
+	</div>
+</div>
+
+ <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog" style="margin-top: 80px">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header list-group-item active">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Solicitar Demo</h4>
+        </div>
+        <form name="demo" action="" method="post" >
+        <div class="modal-body">
+          <p>Escriba sus datos y le contactaremos lo antes posible</p>
+          
+          <div class="form-group"><label for="Nombre">Nombre</label>
+                <input name="nom" type="text" required class="form-control" id="nom">
+                
+          <div class="form-group"><label for="Empresa">Empresa</label>
+                <input class="form-control" type="text" name="empresa" id="empresa">
+                
+          <div class="form-group"><label for="email">Email:</label>
+                <input name="email" type="email" required class="form-control" id="email">
+              
+              
+                <label for="Teléfono">Teléfono</label>
+                <input name="tel" type="tel" required class="form-control" id="tel">
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+        </div>
+
+     
+      </div>
+    </div>  
+     </form>
+  </div>
+</div>
+<!--//MODAL------>  
+
+<style>
+.numconta {
+	height: 25px;	
+	display: block;
+  width: 0;
+  min-height: 0;
+  min-width: 0;
+	
+}
+
+
+</style>
+
+
+
+   <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    
+    <!--owl scripts -->
+    <script src="awlcarrousel/owl-carousel/owl.carousel.js"></script>    
+		
+	<script src="awlcarrousel/assets/js/bootstrap-collapse.js"></script>
+    <script src="awlcarrousel/assets/js/bootstrap-transition.js"></script>
+    <script src="awlcarrousel/assets/js/bootstrap-tab.js"></script>
+
+    <script src="awlcarrousel/assets/js/google-code-prettify/prettify.js"></script>
+    <script src="awlcarrousel/assets/js/application.js"></script>
+    
+    <!--wow scripts-->
+    <script src="wow/dist/wow.js"></script>
+  
+  <script>
+    wow = new WOW(
+    {
+      boxClass:     'wow',      // default
+      animateClass: 'animated', // default
+      offset:       0,          // default
+      mobile:       true,       // default
+      live:         true        // default
+    }
+  )
+  wow.init();
+	
+  </script>
+
+<!-- RESIZE - SCROLL SCRIPTS -->
+
+
+
+     <script type="application/javascript">
+
+
+// PUNTUACIO I EXPEDIENTS PORTADA
+
+function randomUsers(){
+	date=new Date();
+	var any = date.getFullYear();
+	var d_ini=new Date("January, 01, 2013");
+
+        var DayCount=(date-d_ini)/(1000*60*60);
+        DayCount=Math.round(DayCount*3/2); 
+    return(DayCount);
+}
+
+
+function comtador(num){
+	
+var numi = "";
+//alert(num + " " + num.length);
+var q= num.length;
+var qmil=0;
+for(i=q;i>0; i--){
+
+	if(qmil==3){
+		numi ="<img style=\"float: left;width: 14px;min-height: 0; min-width: 0;\" src=\"img/numeros_s.png\" >" + numi;
+	qmil=0;	
+	}
+	qmil++;
+
+	
+	numi ="<img style=\"float: left;width: 38px;min-height: 0; min-width: 0;\" src=\"img/numeros_" + num.substring(i-1,i) + ".png\" >" + numi;
+}
+return numi;
+}
+
+$("#textportada").html("<div style=\"float: left\">" + comtador(randomUsers() + "")  +"&nbsp;</div><div style=\"float: none; height: 62px; padding: 10px\"> <h3 style=\"margin-top: 0px\">Expedientes procesados</h3></div><div style=\"float: none\"><h3>El mejor valorado <span class=\"fa fa-star\" style=\"color:#FC3\"/><span class=\"fa fa-star\" style=\"color:#FC3\"/><span class=\"fa fa-star\" style=\"color:#FC3\"/><span class=\"fa fa-star-half-o\" style=\"color:#FC3\"/></h3><h1>&nbsp;</h1></div>");
+
+$("#textportada2").html("<p>" + comtador(randomUsers() + "")  +"&nbsp;</p><br><h3 style=\"margin-top: 5px\">Expedientes procesados</h3></div><div style=\"float: none\"><h3>El mejor valorado <br><span class=\"fa fa-star\" style=\"color:#FC3\"/><span class=\"fa fa-star\" style=\"color:#FC3\"/><span class=\"fa fa-star\" style=\"color:#FC3\"/><span class=\"fa fa-star-half-o\" style=\"color:#FC3\"/></h3><h1>&nbsp;</h1></div>");
+
+//SCROLL MENUS
+
+	var menutopposition=0;
+	var lrsposition=250;
+	var apladaw = 988;
+	var alcmenu = 65;
+
+	
+	function scrollMenu(){
+		
+
+		
+		if(($( window ).scrollTop())<(menutopposition)){
+			if ($( window ).width() < apladaw){
+				$("#menupral").css("margin-top",0);
+
+			}
+			else {
+				$("#menupral").css("margin-top",menutopposition-$( window ).scrollTop());
+			}	
+		}
+		else {
+		$("#menupral").css("margin-top",0);
+		}
+	}
+	
+	function resizeMenu() {
+
+		
+		if ($( window ).width() < apladaw){
+			
+			//elimina la classe inicial del LRS
+			if(	$("#div-lrs-a").hasClass("div-a-ini")){
+				$("#div-lrs-a").removeClass("div-a-ini");
+				$("#div-lrs-a").addClass("div-a");
+			}
+			
+			$("#logo").css("display","none");
+			$("#logomini").css("display", "block");
+			$("#menupral").css("margin-top",0);
+			$("#owl-demo").css("margin-top",alcmenu);
+			$("#back-top-link").css("display","none");
+				if($("#div-lrs").hasClass("div-a-div")){
+					$("#div-lrs").removeClass("div-a-div");
+					$("#div-lrs").addClass("div-a-div-bot");
+					$("#div-lrs-a").removeClass("div-a");
+					$("#div-lrs-a").addClass("div-a-bot");
+				}
+		}
+		else {
+			
+			$("#logo").css("display", "block");
+			$("#logomini").css("display", "none");
+			$("#owl-demo").css("margin-top",0);
+			$("#back-top-link").css("display", "block");
+				if($("#div-lrs").hasClass("div-a-div-bot")){
+					$("#div-lrs").removeClass( "div-a-div-bot");
+					$("#div-lrs").addClass("div-a-div");
+					$("#div-lrs-a").removeClass( "div-a-bot");
+					$("#div-lrs-a").addClass("div-a");
+				}
+			}
+			scrollMenu();
+		}
+		
+	
+	
+	$( window ).resize(function() {
+        resizeMenu()
+    });
+
+	$( window ).scroll(function() {
+		scrollMenu();
+		//elimina la classe inicial del LRS
+		if ($( window ).width() > apladaw){
+		if(	$("#div-lrs-a").hasClass("div-a-ini")){
+		$("#div-lrs-a").removeClass("div-a-ini");
+		$("#div-lrs-a").addClass("div-a");
+		}
+		}
+    });
+	
+	
+
+
+ $(document).ready(function() {
+
+	 //FUNCIONS DEL POPOVER
+		$("#div-lrs-a").click(function() {
+		
+	if(	$("#div-lrs-a").hasClass("div-a-ini")){
+		$("#div-lrs-a").removeClass("div-a-ini");
+		$("#div-lrs-a").addClass("div-a");
+		}
+	}) 
+	
+$("#popover-lrs").popover({title: "aaaaa", content: "aaaaa", html: true, placement: "right"}); 
+
+	//FUNCIO CONTROL MENU I ELEMENTS PER TMANY FINESTRA
+	
+	resizeMenu();
+	
+	//INICI DE OWL DIAPOS, PER A CADA UN D'ELLS
+	
+	var owlcataleg= $("#owl-cataleg");
+	
+	
+	   owlcataleg.owlCarousel({
+      //items : 5, //10 items above 1000px browser width
+      itemsDesktop : [1000,5], //5 items between 1000px and 901px
+      itemsDesktopSmall : [900,5], // betweem 900px and 601px
+      itemsTablet: [600,3], //2 items between 600 and 0
+      itemsMobile : [300,2] // itemsMobile disabled - inherit from itemsTablet option
+  });
+  
+    // Custom Navigation Events
+  $(".next").click(function(){
+    owlcataleg.trigger('owl.next');
+  })
+  $(".prev").click(function(){
+    owlcataleg.trigger('owl.prev');
+  })
+  $(".play").click(function(){
+    owlcataleg.trigger('owl.play',1000); //owl.play event accept autoPlay speed as second parameter
+  })
+  $(".stop").click(function(){
+    owlcataleg.trigger('owl.stop');
+  })
+
+
+      var owl = $("#owl-demo");
+
+      owl.owlCarousel({
+        navigation : true,
+        singleItem : true,
+        transitionStyle : "fade"
+      });
+
+      //Select Transtion Type
+      $("#transitionType").change(function(){
+        var newValue = $(this).val();
+
+        //TransitionTypes is owlCarousel inner method.
+        owl.data("owlCarousel").transitionTypes(newValue);
+
+        //After change type go to next slide
+        owl.trigger("owl.next");
+	
+      });
+    
+	
+	//SCRIPT BOTO BACK TO TOP
+
+
+	// hide #back-top first
+	$("#back-top").hide();
+	
+	
+	
+	// fade in #back-top
+	$(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('#back-top').fadeIn();
+			} else {
+				$('#back-top').fadeOut();
+			}
+		});
+
+		// scroll body to 0px on click
+		$('#back-top a').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+		});
+	});
+
+});
+
+</script>
+
+    
+</body>
+</html>
